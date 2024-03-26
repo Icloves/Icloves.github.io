@@ -237,11 +237,10 @@ p {
 }
 
 
-.testtest{
+/* .testtest{
     width: 300px;
     height: 100px;
     word-break: break-all;
-    /* word-wrap: break-word; */
 
     border: solid;
     border-color: #4520AB;
@@ -253,6 +252,5 @@ p {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     line-clamp: 2;
-    /* box-orient: vertical; */
 
-}
+} */
