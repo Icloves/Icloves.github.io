@@ -1,0 +1,63 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Транслит</title>
+  </head>
+  <body>
+    <div class="header">
+      <p>T.R.A.N.S.L.I.T.</p>
+    </div>
+
+    <div class="container">
+      <div class="input-text">
+        <input
+          type="text"
+          name="text-input-field"
+          id="text-field"
+          placeholder="Введите текст"
+        />
+        <button id="btn-add">Добавить</button>
+      </div>
+      <div class="table-translation">
+        <div class="col-text">
+          <div class="cell-text">
+            <div class="index">1</div>
+            <div class="text">Привет 👋</div>
+            <div class="close" id="close-text">
+              <img src="svg/cross.svg" alt="Удалить строку" />
+            </div>
+          </div>
+        </div>
+        <div class="col-translation">
+          <div class="cell-translation">
+            <div class="index-translate">1</div>
+            <div class="translation-text">Privet</div>
+            <div class="close" id="close-translate">
+              <img src="svg/cross.svg" alt="Удалить строку" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="closeAll">
+        <div class="close-all">
+          <img src="svg/cross.svg" alt="Удалить все" />
+        </div>
+        <button>Удалить все</button>
+      </div>
+    </div>
+    <div class="testtest">
+      HelloHelloHelloHelloHegggHelloHelloHelloHelloHelloHelhjgkhjhvbhjvhjgvjmloHello<a
+        href="google.com"
+        >Opa</a
+      >
+    </div>
+    <script defer src="index.js"></script>
+  </body>
+</html>

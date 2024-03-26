@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font: "IBM Plex Mono", monospace;
+    --purple: #4520AB;
+}
+
+.header,
+.text,
+.index, 
+.index-translate,
+.translation-text, 
+#text-field, 
+button {
+    font-family: var(--font);
+}
+
+p {
+    color: var(--purple);
+}
+
+.header, .index, .index-translate {
+    font-weight: 600;
+}
+
+.container, 
+.input-text, 
+.table-translation, 
+.cell-text, 
+.cell-translation, 
+.closeAll {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    letter-spacing: -3.2px;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.container {
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+.input-text {
+    width: 500px;
+    height: 56px;
+    border: solid 2px black;
+    border-radius: 14px;
+}
+
+#text-field {
+    border: 0;
+    outline: none;
+    height: 25px;
+    font-size: 18px;
+    width: 70%;    
+}
+
+.input-text > button {
+    background-color: black;
+    width: 107px;
+    height: 38px;
+    border-radius: 8px;
+    padding: 0px 12px 5px 12px;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.table-translation {
+    border-radius: 8px;
+    width: 500px;
+    min-height: 40px;    
+}
+
+.col-text, .col-translation {
+    width: 50%;
+}
+
+.cell-text {
+    gap: 20px;
+    height: 40px;
+    border-right: solid 2px black;
+    border-bottom: solid 1px black;
+
+}
+
+.cell-text:last-child {
+    border-bottom: 0;
+}
+
+.cell-translation:last-child {
+    border-bottom: 0;
+}
+
+.col-text {
+    border-radius: 8px 0 0 8px;
+    background-color: #F0F0F0;
+}
+
+.col-translation {
+    border-radius: 0 8px 8px 0;
+    background-color: #D8D8D8;
+}
+
+.index, .index-translate {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.text, .translation-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text {
+    width: 90%;
+}
+
+.cell-translation {
+    gap: 20px;
+    height: 40px;
+    border-bottom: solid 1px black;
+
+}
+
+.translation-text {
+    width: 80%;
+    padding-left: 20px;    
+}
+
+.close {
+   padding-right: 10px; 
+}
+
+.closeAll {
+    width: 176px;
+    height: 38px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #ADADAD;
+}
+
+.closeAll > button {
+    font-size: 18px;
+    font-weight: 400;
+    border: 0;
+    background-color: #ADADAD;
+    width: 100%;
+
+}
+
+.closeAll {
+    padding-left: 5px;
+}
+
+@media (min-width: 480px) {
+    .cell-translation > .index-translate {
+        display: none;
+    }
+
+    .cell-text > .close {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-translation{
+        flex-direction: column;        
+    }
+
+    .input-text {
+        width: 328px;
+    }
+
+    .header {
+        margin-bottom: 45px;
+        margin-top: 40px;
+        font-size: 36px;
+    }
+
+    .container {
+        gap: 30px;
+    }
+
+    #text-field {
+        font-size: 15px;
+        width: 60%;
+    }
+
+    .translation-text {
+        padding-left: 0;
+
+    }
+
+    .cell-text {
+        border-right: 0;
+    }
+
+    .cell-text:first-child {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .cell-text:last-child {
+        border-radius: 0;
+        border-bottom: solid 2px black;
+    }
+
+    .cell-translation:first-child {
+        border-radius: 0
+    }
+
+    .cell-translation:last-child {
+        border-radius: 0 0 8px 8px;
+    }
+
+    .col-text{
+        border-radius: 8px 8px 0 0;
+    }
+
+    .col-translation {
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+
+.testtest{
+    width: 300px;
+    height: 100px;
+    word-break: break-all;
+    /* word-wrap: break-word; */
+
+    border: solid;
+    border-color: #4520AB;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    /* box-orient: vertical; */
+
+}
